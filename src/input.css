@@ -1,0 +1,22 @@
+/* src/input.css */
+
+/* Register font */
+@font-face {
+  font-family: 'Norse';
+  src: url('/fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom CSS variables */
+@layer base {
+  :root {
+    --color-lightgrey: #f9fafc;
+  }
+}
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss"
