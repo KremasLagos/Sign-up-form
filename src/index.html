@@ -1,43 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="flex justify-center">
-    <div class="relative overflow-hidden h-screen w-2/5 flex">
-        <div class="absolute object-center flex mt-26 
-        justify-center bg-black/50 p-5 w-full items-center">
-            <img src="/images/odin-lined.png" alt="" class="h-25 opacity-100">
-            <div class="text-8xl text-amber-50 font-norse justify-self-center">Odin</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="flex justify-center bg-light-grey">
+    <div class="relative overflow-hidden h-screen w-2/5 flex min-w-120">
+      <div
+        class="absolute object-center flex mt-26 justify-center bg-black/50 p-5 w-full items-center min-w-120"
+      >
+        <img src="/images/odin-lined.png" alt="" class="h-25 opacity-100" />
+        <div
+          class="overflow-hidden text-8xl text-amber-50 font-norse justify-self-center"
+        >
+          Odin
         </div>
-        <img src="/images/image.jpg" alt="" class="object-fill h-full w-full align-baseline">
+      </div>
+      <img
+        src="/images/image.jpg"
+        alt=""
+        class="object-cover h-full w-full align-baseline min-w-120"
+      />
     </div>
-  
-  <div class="flex flex-col flex-1">
-    <div class="bg-lightgrey">Hero Text</div>
-    <div>Secondary Text</div>
-    <form action="" class="flex bg-white">
-        <div class="flex flex-col">
-            <label for="">FIRST NAME</label><input type="text" class="border 1">
-            <label for="">EMAIL</label><input type="text" class="border 1">
-            <label for="">PASSWORD</label><input type="text" class="border 1">
+
+    <div class="flex flex-col flex-1" id="form-container">
+      <div class="bg-light-grey p-10 text-2xl font-bold">
+        This is not a real service! You know you need something like this in
+        your life to help you realize your deepest dreams. <br />
+        Sign up now to get started
+      </div>
+      <div class="bg-light-grey p-10 text-2xl font-bold">You know you want to.</div>
+      <form action="" class="bg-white pt-5 pb-10 shadow-2xl p-10">
+        <legend class="font-bold text-2xl mb-3">Let's do this!</legend>
+        <div class="flex gap-2">
+          <div class="flex flex-col">
+            <label for="" class="font-semibold">FIRST NAME</label
+            ><input type="text" class="border 1 rounded-[3px] " /> <label for="" class="font-semibold">EMAIL</label
+            ><input type="text" class="border 1 rounded-[3px]" />
+            <label for="">PASSWORD</label><input type="text" class="border 1 rounded-[3px]" />
+          </div>
+          <div class="flex flex-col">
+            <label for="">LAST NAME</label
+            ><input type="text" class="border 1 rounded-[3px]" />
+            <label for="">PHONE NUMBER</label
+            ><input type="text" class="border 1 rounded-[3px]" />
+            <label for="">CONFIRM PASSWORD</label
+            ><input type="text" class="border 1 rounded-[3px]" />
+          </div>
         </div>
-        <div class="flex flex-col">
-            <label for="">LAST NAME</label><input type="text" class="border 1">
-            <label for="">PHONE NUMBER</label><input type="text" class="border 1">
-            <label for="">CONFIRM PASSWORD</label><input type="text" class="border 1">
-        </div>
-    </form>
-    <div class="p-10">
-        <button class="bg-green-700 py-1 px-8 rounded-2xl">Create Account</button>
+      </form>
+      <div class="p-10 bg-light-grey">
+        <button
+          class="bg-green-700 justify-items-center mb-14 justify-center self-center py-2 px-8 rounded-[4px] text-white font-bold"
+        >
+          Create Account
+        </button>
 
         <div class="flex">
-            <div>Already have an account?</div><div>Log In</div>
+          <div>Already have an account?</div>
+          <div class="text-green-700 bolt font-bold ml-2">Log In</div>
         </div>
+      </div>
     </div>
-
-  </div>
-</body>
+  </body>
 </html>

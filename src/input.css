@@ -9,13 +9,15 @@
   
 }
 
-/* Custom CSS variables */
-@layer base {
-  :root {
-    --color-lightgrey: #f9fafc;
-  }
-}
+
 @theme{
+  --color-light-grey: #f9fafc;
+
+
   --font-norse: "Norse"
+
+
+  
+  
 }
 
